@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Cars</title>
+    <link rel="stylesheet" href="/carsnew_style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Add a new car</h3>
+        <form action="#" method='POST' enctype="multipart/form-data">
+            <label for="car_name">Car Name:</label>
+            <input type="text" name='car_name' id='car_name'>
+
+            <label for="car_model">Car Model:</label>
+            <input type="text" name='car_model' id='car_model'>
+
+            <label for="car_type">Car Type:</label>
+            <input type="text" name='car_type' id='car_type'>
+
+            <label for="price">Price:</label>
+            <input type="number" name='price' id='price' min="1">
+
+            <label for="images">Images:</label>  
+            <input type="file" name="images[]" id="images" multiple>
+
+            <input class='submit' type="submit" value="Add">
+        </form>
+    </div>
+</body>
+</html>
